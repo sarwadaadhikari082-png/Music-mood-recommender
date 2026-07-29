@@ -1,5 +1,5 @@
-import { detectMoodFromText, detectMoodFromSelfie } from './mood-detection.js';
-import { getSongsForMood } from './song-recommender.js';
+import { detectMoodFromText, detectMoodFromSelfie } from './mooddetection.js';
+import { getSongsForMood } from './songrecommender.js';
 
 async function handleTextSubmit(text) {
   const mood = await detectMoodFromText(text);      // step 1: detect
